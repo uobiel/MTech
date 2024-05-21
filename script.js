@@ -11,6 +11,8 @@ const dataCompany = {
     imageIlustrationBackground: 'img/bg.svg',
 }
 
+const container = document.querySelector('.container');
+
 const elementsHeader = {
     companyName: document.querySelector('.company-name'),
     contact: document.querySelector('#contact'),
@@ -27,7 +29,10 @@ const elementsMain = {
     main: document.querySelector('#main')
 }
 
-let actualColor = dataCompany.companyColor1;
+const elementsMenu = {
+    iconHamburguer: document.querySelector('#open-menu'),
+    menu: document.querySelector('.menu')
+}
 
 window.sr = ScrollReveal({ reset: true });
 sr.reveal('.container', { duration: 500 });
