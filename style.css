@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container > header {
+    display: flex;
+    padding: 55px;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 1s ease-in-out;
+}
+
+.container > header > .company-name {
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    width: 150px;
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.02);
+}
+
+.container > main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: background-color 1s ease-in-out;
+}
+
+.container > main > section {
+    width: 45%;
+    height: 100vh;
+    margin: 15px;
+}
+
+.container > main > section > .text-big {
+    font-size: 50px;
+    color: white;
+    margin: 50px 0px 50px 0px;
+}
+
+.container > main > section > .text-small {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.759);
+    margin: 50px 0px 50px 0px;
+}
+
+.container > main > section > .button > button {
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.container > main > .rigth > .fade {
+    background-image: url('img/bg.svg');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    min-height: 60vh;
+    margin-top: 50px;
+}
+
+.container > main > .rigth > .fade > .image-ilustration {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+}
+
+.section-menus {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-menus > a {
+    color: white;
+    text-decoration: none;
+}
+
+.section-menus > a:hover {
+    cursor: pointer;
+    border-bottom: 1px solid #f2f1f1;
+}
+
+/* @media screen and (max-width: 600px) {
+    .container > main > .rigth > .fade {
+        background-image: url('img/bg.svg');
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-height: 500px;
+        height: 500px;
+    }
+} */
