@@ -4,16 +4,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    overflow: hidden;
-}
-
 .container > header {
     display: flex;
     padding: 55px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     transition: background-color 1s ease-in-out;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .container > header > .company-name {
@@ -37,6 +40,7 @@ body {
 
 .container > main {
     width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     transition: background-color 1s ease-in-out;
@@ -44,7 +48,6 @@ body {
 
 .container > main > section {
     width: 45%;
-    height: 100vh;
     margin: 15px;
 }
 
@@ -100,16 +103,114 @@ body {
     border-bottom: 1px solid #f2f1f1;
 }
 
-/* @media screen and (max-width: 600px) {
-    .container > main > .rigth > .fade {
-        background-image: url('img/bg.svg');
-        background-repeat: no-repeat;
-        background-size: auto 100%;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        max-height: 500px;
-        height: 500px;
+#contact-link {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .container > main > section.left {
+        width: 40%;
     }
-} */
+
+    .container > main > section > .text-big {
+        font-size: 40px;
+        transition: font-size 1s ease-in-out;
+    }
+
+    .container > main > section > .text-small {
+        font-size: 15px;
+        transition: font-size 1s ease-in-out;
+    }
+
+    .container > main > .rigth > .fade {
+        height: 30vh;
+        min-height: 40vh;
+        transition: min-height 1s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .container > main > section > .text-big {
+        font-size: 30px;
+        transition: font-size 1s ease-in-out;
+    }
+
+    #main > .left {
+        width: 100%;
+    }
+
+    .container > main > .rigth > .fade {
+        height: 30vh;
+        min-height: 30vh;
+        transition: min-height 1s ease-in-out;
+    }
+
+    .container > header > .company-name {
+        transition: font-size 1s ease-in-out;
+        font-size: 20px;
+    }
+
+    .section-menus > a {
+        transition: font-size 1s ease-in-out;
+        font-size: 12px;
+    }
+
+    .button {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #main {
+        flex-wrap: wrap;
+    }
+
+    .container > main > section {
+        width: 100%;
+    }
+
+
+    .container > main > .rigth > .fade, .container > main > .rigth > .fade > .image-ilustration {
+        margin-top: 0;
+        background-position: center;
+        height: 250px;
+    }
+
+    .container > main > section > .text-big {
+        font-size: 40px;
+        transition: font-size 1s ease-in-out;
+    }
+
+    .container > header > .company-name {
+        transition: font-size 1s ease-in-out;
+        font-size: 30px;
+    }
+
+    .container > header {
+        padding: 25px;
+    }
+
+    #contact {
+        display: none;
+    }
+
+    .wrap {
+        justify-content: space-evenly;
+        padding-top: 15px;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    #contact-link {
+        display: block;
+    }
+
+    .container > header {
+        padding: 25px;
+        transition: 1s;
+    }
+}

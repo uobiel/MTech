@@ -16,7 +16,8 @@ const elementsHeader = {
     contact: document.querySelector('#contact'),
     header: document.querySelector('#header'),
     services: document.querySelector('#services'),
-    social: document.querySelector('#social')
+    social: document.querySelector('#social'),
+    contactLink: document.querySelector('#contact-link')
 }
 
 const elementsMain = {
@@ -27,11 +28,12 @@ const elementsMain = {
     main: document.querySelector('#main')
 }
 
-let actualColor = dataCompany.companyColor1;
+let actualColor = dataCompany.companyColor1
 
 window.sr = ScrollReveal({ reset: true });
 sr.reveal('.container', { duration: 500 });
 
+document.body.style.backgroundColor = `${dataCompany.companyColor1}`
 elementsHeader.header.style.backgroundColor = `${dataCompany.companyColor1}`
 elementsHeader.companyName.innerHTML = `${dataCompany.companyName}`
 elementsHeader.companyName.style.color = '#ffffff'
@@ -42,6 +44,7 @@ elementsMain.imageIlustration.style.backgroundImage = `url(${dataCompany.imageIl
 
 elementsHeader.companyName.addEventListener('click', function(){
     if(actualColor === dataCompany.companyColor1){
+        document.body.style.backgroundColor = `${dataCompany.companyColor2}`
         elementsHeader.header.style.backgroundColor = `${dataCompany.companyColor2}`
         elementsMain.main.style.backgroundColor = `${dataCompany.companyColor2}`
         elementsHeader.companyName.style.color = 'black'
@@ -49,11 +52,13 @@ elementsHeader.companyName.addEventListener('click', function(){
         elementsMain.textH2.style.color = 'black'
         elementsHeader.services.style.color = 'black'
         elementsHeader.social.style.color = 'black'
+        elementsHeader.contactLink.style.color = 'black'
 
         actualColor = dataCompany.companyColor2
     } 
 
     else if(actualColor === dataCompany.companyColor2){
+        document.body.style.backgroundColor = `${dataCompany.companyColor1}`
         elementsHeader.header.style.backgroundColor = `${dataCompany.companyColor1}`
         elementsMain.main.style.backgroundColor = `${dataCompany.companyColor1}`
         elementsHeader.companyName.style.color = 'white'
@@ -61,6 +66,7 @@ elementsHeader.companyName.addEventListener('click', function(){
         elementsMain.textH2.style.color = 'white'
         elementsHeader.services.style.color = 'white'
         elementsHeader.social.style.color = 'white'
+        elementsHeader.contactLink.style.color = 'white'
         
         actualColor = dataCompany.companyColor1
     }
