@@ -48,6 +48,7 @@ elementsHeader.companyName.innerHTML = `${dataCompany.companyName}`
 elementsHeader.companyName.style.color = '#ffffff'
 elementsHeader.contact.style.backgroundColor = `${dataCompany.companyColorButton1}`
 elementsMain.knowMore.style.backgroundColor = `${dataCompany.companyColorButton2}`
+elementsMain.knowMore.style.color = 'black'
 elementsMain.main.style.backgroundColor = `${dataCompany.companyColor1}`
 elementsMain.imageIlustration.style.backgroundImage = `url(${dataCompany.imageIlustration})`
 
