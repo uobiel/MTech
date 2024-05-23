@@ -164,6 +164,7 @@
 
 @media screen and (max-width: 500px) {
     #main {
+        transition: 1s;
         flex-wrap: wrap;
     }
 
@@ -213,5 +214,299 @@
     .container > header {
         padding: 25px;
         transition: 1s;
+    }
+}
+
+/* sessão dois de imagem */
+
+.section-image {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.section-image > .background-fade {
+    width: 70%;
+    height: 100%;
+    background-color: #3d3d3d;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.background-fade > .image {
+    width: 100%;
+    height: 90%;
+    background-image: url('img/image-ilustration.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    border-radius: 8px;
+}
+
+/* section dashboards */
+
+.section-dashboards {
+    width: 100%;
+    height: 500px;
+    margin-top: 200px;
+}
+
+.linha {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linha > .text {
+    width: 100%;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.text > .icon-dash {
+    width: 250px;
+    height: 250px;
+    background-image: url('img/grafico-de-pizza.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text > .icon-phone-dash {
+    width: 250px;
+    height: 250px;
+    background-image: url('img/grafico-de-barras.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.linha > .images {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.linha > .images > .imagem1, .imagem2 {
+    width: 37%;
+    height: 100%;
+}
+
+.linha > .images > .imagem1 {
+    background-image: url('img/Agenda.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.linha > .images > .imagem2 {
+    background-image: url('img/movimento.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+/* sessão três */
+
+.section-three {
+    width: 100%;
+    height: 300px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 400px;
+}
+
+.section-three > .container{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.section-three > .container > .ico{
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+.section-three > .container > .text1{
+    color: #f2f1f1;
+    margin: 10px 0px 10px 0px;
+} 
+
+.section-three > .container > .text2{
+    color: #f2f1f1b4;
+    text-align: center;
+} 
+
+.section-three > .container > .ico1{
+    background-image: url('img/Coin\ icon.png');
+
+} 
+
+.section-three > .container > .ico2{
+    background-image: url('img/gerenciamento-de-equipe.png');
+} 
+
+.section-three > .container > .ico3{
+    background-image: url('img/taxa.png');
+}
+
+/* sessão 4 */
+
+.section-four {
+    width: 100%;
+    height: 300px;
+    background-color: #3d3d3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 420px;
+    margin: 20px 0px 20px 0px;  
+}
+
+.contact-icons > .ico {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-icons > .ico1 {
+    background-image: url('img/whatsapp.svg');
+}
+
+.contact-icons > .ico2 {
+    background-image: url('img/insta.svg');
+}
+
+.contact-icons > .ico3 {
+    background-image: url('img/email.svg');
+}
+
+#email {
+    width: 310px;
+    margin: 20px 0px 20px 0px;  
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.section-four > button {
+    width: 100px;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    background-color: #3d3d3d;
+    border: 1px solid #bfaff2;
+    color: white;
+}
+
+.section-four > button:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1000px) {
+    .section-image > .background-fade {
+        width: 80%;
+        height: 80%;
+        transition: 1s;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section-image > .background-fade {
+        transition: 1s;
+        margin-top: 60px;
+        width: 80%;
+        height: 100%;
+        transition: 1s;
+    }
+
+    .section-image {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #text-emissao {
+        transition: 1s;
+        font-size: 30px;
+        margin-left: 30px;
+    }
+
+    .text > .icon-dash {
+        transition: 1s;
+        width: 100px;
+        height: 100px;
+        margin-top: 40px;
+    }
+    
+    .text > .icon-phone-dash {
+        transition: 1s;
+        width: 100px;
+        height: 100px;
+        margin-top: 40px;
+    }
+
+    .section-dashboards {
+        transition: 1s;
+        margin: 100px 0px 0px 0px;
+    }
+
+    .linha > .images {
+        transition: 1s;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linha > .images > .imagem1, .imagem2 {
+        transition: 1s;
+        width: 80%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section-three > .container > .text1{
+        transition: 1s;
+        font-size: 10px;
+    } 
+    
+    .section-three > .container > .text2{
+        transition: 1s;
+        font-size: 10px;
+    } 
+
+    .section-three {
+        transition: 1s;
+
+        margin-top: 250px;
+        height: 200px;
     }
 }
