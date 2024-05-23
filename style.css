@@ -240,7 +240,7 @@
 .background-fade > .image {
     width: 100%;
     height: 90%;
-    background-image: url('img/image-ilustration.jpg');
+    background-image: url('img/vendas.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
@@ -395,6 +395,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
+}
+
+.contact-icons > .ico:hover {
+    transform: scale(1.09);
 }
 
 .contact-icons > .ico1 {
@@ -426,6 +431,7 @@
     background-color: #3d3d3d;
     border: 1px solid #bfaff2;
     color: white;
+    cursor: pointer;
 }
 
 .section-four > button:hover {
